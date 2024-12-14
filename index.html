@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estados dos arquivos na prática</title>
+</head>
+<body>
+    <h2>ciclo do estado dos arquivos</h2>
+    
+    <ol>
+        <li>untracked > git add > staged</li>
+        <li>staged > git commit -m > unmodified</li>
+        <li>unmodified > modificação > modified</li>
+        <li>modified > git add > staged</li>
+        <li>staged > git commit -m > unmodified</li>
+    </ol>
+
+
+    <h2>Passo a passo para preparar um arquivo do PC para o GitHub</h2>
+    <ul>
+        <li><b>git init</b>: para inicializar a pasta com o git</li>
+        <li><b>git branch -M main</b>: muda o nome do branch</li>
+        <li><b>git remote add origin</b>: linkar nosso repositório local com o repositório remoto</li>
+        <li><b>git remote -v</b>: para visualizar com qual repositório o nosso está linkado</li>
+    </ul>
+
+    <h2>Ccomandos e estados dos arquivos</h2>
+    <ul>
+        <li><b>git status</b>: mostra o estado atual deles na pasta</li>
+        <li><b>git add .</b>: manda todos os arquivos modificados para staged</li>
+        <li><b>git push -u origin main</b>: envia para o site os arquivos commitados</li>
+    </ul>
+
+</body>
+</html>
